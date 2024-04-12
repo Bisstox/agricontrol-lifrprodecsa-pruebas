@@ -1,0 +1,35 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-11-19 12:55:39 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\pm-report.php 25
+ERROR - 2023-11-19 12:55:39 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\pm-report.php 25
+ERROR - 2023-11-19 12:55:39 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\pm-report.php 25
+ERROR - 2023-11-19 12:55:49 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 12:55:49 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 12:55:49 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 12:56:14 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 12:56:14 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 12:56:14 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 16:01:00 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 16:01:00 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 16:01:00 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:32:14 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\pm-report.php 25
+ERROR - 2023-11-19 18:32:14 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\pm-report.php 25
+ERROR - 2023-11-19 18:32:14 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\pm-report.php 25
+ERROR - 2023-11-19 18:32:18 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:32:18 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:32:18 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:39:13 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:39:13 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:39:13 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:40:24 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:40:24 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 18:40:24 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 21:29:24 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 21:29:24 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 21:29:24 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 23:26:02 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 23:26:02 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 23:26:02 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 23:35:01 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 23:35:01 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
+ERROR - 2023-11-19 23:35:01 --> Severity: Notice --> Undefined variable: IdFinca C:\Users\raymundo\Documents\_desarrollo\_giteaBisstox\BellitaAgricontrolWeb\application\views\Crud\date-range_filter.php 25
