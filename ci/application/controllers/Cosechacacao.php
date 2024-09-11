@@ -40,7 +40,7 @@ class Cosechacacao extends Public_controller
 			$crud->set_theme('tablestrap4_datefilter');
 			$crud->set_table('z_cosecha_cacao');
 			$crud->set_subject('Cosecha de Cacao');
-			$crud->unset_read();
+			// $crud->unset_read();
 			$crud->unset_jquery();
 			$crud->unset_clone();
 			// $crud->unset_edit();
@@ -55,7 +55,8 @@ class Cosechacacao extends Public_controller
 			}
 
 			if ($group != 1 && $group != 2) {
-				redirect('/', 'refresh');
+				// redirect('/', 'refresh');
+				$crud->unset_edit();
 			}
 
 			$crud->callback_column('total', array($this, '_totalWeight_callback'));
@@ -64,9 +65,48 @@ class Cosechacacao extends Public_controller
 			$crud->set_relation('subtarea', 'z_subtarea', 'nombre_subtarea');
 			$crud->set_relation('finca', 'z_finca', 'nombre');
 			$crud->set_relation('trabajador', 'z_personal', 'nombre');
-			$crud->set_relation('tarea', 'z_tarea', 'nombre');
+			// $crud->set_relation('subtarea', 'vw_util_tareas_subtareas', 'tarea_nombre');
 			$crud->set_relation('lote', 'z_lote', 'lote');
 			$crud->set_relation('modulo', 'z_modulo', 'modulo');
+
+			$crud->callback_column('tarea', function ($value, $row) {
+				$ci =& get_instance();
+				$ci->load->database();
+
+				// Obtener tarea_id
+				$ci->db->where('id', $row->subtarea);
+				$subtarea = $ci->db->get('z_subtarea')->row();
+
+				// Obtener nombre de la tarea
+				$ci->db->where('id', $subtarea->tarea_id);
+				$tarea = $ci->db->get('z_tarea')->row();
+
+				return $tarea ? $tarea->nombre : 'N/A';
+			});
+
+			$crud->callback_edit_field('tarea', function ($value, $primary_key) {
+				$ci =& get_instance();
+				$ci->load->database();
+
+				// Obtener subtarea para el registro actual
+				$ci->db->where('id', $primary_key);
+				$subtarea = $ci->db->get('z_cosecha_cacao')->row();
+
+				// Obtener tarea_id y luego el nombre de la tarea
+				if ($subtarea) {
+					$ci->db->where('id', $subtarea->subtarea);
+					$tareaId = $ci->db->get('z_subtarea')->row();
+
+					if ($tareaId) {
+						$ci->db->where('id', $tareaId->tarea_id);
+						$tarea = $ci->db->get('z_tarea')->row();
+					}
+
+					return $tarea ? $tarea->nombre : 'N/A';
+				}
+
+				return 'N/A';
+			});
 
 			$crud->columns(
 				'supervisor',
@@ -96,6 +136,8 @@ class Cosechacacao extends Public_controller
 				'saco15',
 				'observaciones'
 			);
+
+			$crud->field_type('created_at', 'readonly');
 			/* #endregion */
 
 			/* #region Date filter */
@@ -112,7 +154,7 @@ class Cosechacacao extends Public_controller
 
 			/* #region Print & Export filter */
 
-			$crud->callback_before_update(array($this,'_updateTotalWeight'));
+			$crud->callback_before_update(array($this, '_updateTotalWeight'));
 
 			$state = $crud->getState();
 
@@ -217,7 +259,11 @@ class Cosechacacao extends Public_controller
 			}
 
 			if ($group != 1 && $group != 2) {
-				redirect('/', 'refresh');
+				// redirect('/', 'refresh');
+
+				$crud->unset_add();
+				$crud->unset_edit();
+				$crud->unset_delete();
 			}
 			/* #endregion */
 
@@ -311,12 +357,15 @@ class Cosechacacao extends Public_controller
 		return $total_sum;
 	}
 
-	function _updateTotalWeight($post_array, $primary_key) {
+	function _updateTotalWeight($post_array, $primary_key)
+	{
 		$sacos = array($post_array['saco1'], $post_array['saco2'], $post_array['saco3'], $post_array['saco4'], $post_array['saco5'], $post_array['saco6'], $post_array['saco7'], $post_array['saco8'], $post_array['saco9'], $post_array['saco10'], $post_array['saco11'], $post_array['saco12'], $post_array['saco13'], $post_array['saco14'], $post_array['saco15']);
 		$post_array['total_peso'] = array_sum($sacos);
-		$post_array['total_sacos'] = count(array_filter($sacos, function($saco) { return $saco > 0; }));
+		$post_array['total_sacos'] = count(array_filter($sacos, function ($saco) {
+			return $saco > 0;
+		}));
 		return $post_array;
 	}
-		
+
 
 }

@@ -1,0 +1,20 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2024-07-28 14:43:19 --> Query error: Column 'lot_number' cannot be null - Invalid query: INSERT INTO `z_postharvest_weight` (`lot_number`, `supervisor_id`, `supervisor_name`, `operation_date`, `lot_weight`, `container_weight`, `comments`) VALUES (NULL, NULL, NULL, 'null', NULL, NULL, '')
+ERROR - 2024-07-28 14:43:19 --> Severity: Warning --> chmod(): Operation not permitted /var/www/html/system/core/Log.php 233
+ERROR - 2024-07-28 14:43:19 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at /var/www/html/system/core/Exceptions.php:271) /var/www/html/system/core/Common.php 570
+ERROR - 2024-07-28 14:43:21 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_fermentation` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 14:43:22 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_sundrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 14:43:23 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_machinedrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 14:43:27 --> Query error: Column 'lot_number' cannot be null - Invalid query: INSERT INTO `z_postharvest_weight` (`lot_number`, `supervisor_id`, `supervisor_name`, `operation_date`, `lot_weight`, `container_weight`, `comments`) VALUES (NULL, NULL, NULL, 'null', NULL, NULL, '')
+ERROR - 2024-07-28 14:43:32 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_fermentation` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 14:43:35 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_sundrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 14:43:36 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_machinedrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 20:07:17 --> Query error: Column 'lot_number' cannot be null - Invalid query: INSERT INTO `z_postharvest_weight` (`lot_number`, `supervisor_id`, `supervisor_name`, `operation_date`, `lot_weight`, `container_weight`, `comments`) VALUES (NULL, NULL, NULL, 'null', NULL, NULL, '')
+ERROR - 2024-07-28 20:07:19 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_fermentation` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 20:07:20 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_sundrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 20:07:21 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_machinedrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 20:12:17 --> Query error: Column 'lot_number' cannot be null - Invalid query: INSERT INTO `z_postharvest_weight` (`lot_number`, `supervisor_id`, `supervisor_name`, `operation_date`, `lot_weight`, `container_weight`, `comments`) VALUES (NULL, NULL, NULL, 'null', NULL, NULL, '')
+ERROR - 2024-07-28 20:12:19 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_fermentation` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 20:12:20 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_sundrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')
+ERROR - 2024-07-28 20:12:21 --> Query error: Column 'lot_id' cannot be null - Invalid query: INSERT INTO `z_postharvest_machinedrying` (`lot_id`, `start_date`, `end_date`, `comments`) VALUES (NULL, NULL, NULL, '')

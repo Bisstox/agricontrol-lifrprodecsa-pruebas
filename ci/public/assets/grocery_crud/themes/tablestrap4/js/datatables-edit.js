@@ -35,6 +35,7 @@ $(function() {
                         success: function(result) {
                             PNotify.removeAll();
                             data = $.parseJSON(result);
+                            console.warn(data);
                             if (data.success) {
 
                                 if (save_and_close) {
@@ -61,9 +62,14 @@ $(function() {
                             } else {
                                 new PNotify({
                                     title: '¡Algo ha salido mal!',
-                                    text: data.error_message,
+                                    text: data.error_message || 'Ocurrió un error inesperado.',
                                     type: 'error'
                                 });
+
+                                $.each(data.error_fields, function(index, value) {
+                                    $('#crudForm input[name=' + index + ']').addClass('field_error');
+                                });
+                                
                             }
                         },
                         error: function() {

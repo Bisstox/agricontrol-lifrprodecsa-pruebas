@@ -14,7 +14,7 @@ class Tareas_model  extends CI_Model  {
     }
 
     public function get_all(){
-        $this->db->select('id, UPPER(nombre) as Tarea, unidad_labor_id, id_finca');
+        $this->db->select('id, UPPER(nombre) as tarea, cultivos_id, estado');
         $this->db->order_by('nombre');
         $result = $this->db->get('z_tarea');
         $tareas = $result->result_array();
