@@ -1,0 +1,3 @@
+[submodule "sql"]
+    path = sql
+    url = https://git.inorizonti.com/Bisstox/LifprodecsaAgricontrolSQL.git
