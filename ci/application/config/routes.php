@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //$route[LOGIN_PAGE] = 'examples/login';
 $route['api/users(:num)'] = 'api/users/id/$1';
+$route['filter_records'] = 'Payment/filter';

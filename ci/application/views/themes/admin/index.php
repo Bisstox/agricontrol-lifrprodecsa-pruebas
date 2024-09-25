@@ -115,6 +115,8 @@
                     <li><a href="<?php echo site_url('PM/reportePagos') ?>">Reporte de pago</a></li>
                     <?php if ($data_template['grupo'] < 3) { ?>
                       <li><a href="<?php echo site_url('PM/editarPM') ?>">-- 📝 Editar reportes de pago</a></li>
+                      <li><a href="<?php echo site_url('Payment') ?>">-- 💲 Registrar Ajustes de pago</a></li>
+                      <li><a href="<?php echo site_url('Payment/list_adjusments') ?>">-- 📄 Ver Ajustes de pago</a></li>
                     <?php } ?>
                     <li><a href="<?php echo site_url('AM') ?>">Reporte de labores </a></li>
                     <li><a href="<?php echo base_url('AM/pivotlabores'); ?>">-- Pivot labores </a></li>
