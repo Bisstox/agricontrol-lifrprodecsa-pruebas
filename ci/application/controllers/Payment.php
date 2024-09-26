@@ -10,7 +10,7 @@ class Payment extends CI_Controller
 
         $this->load->database();
         $this->load->helper('url');
-        $this->load->library('ion_auth');
+        //$this->load->library('ion_auth');
         $this->load->library('grocery_CRUD');
         $this->load->model('fincas_model');
         $this->load->helper('payment_reports');
