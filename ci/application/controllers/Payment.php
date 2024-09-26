@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Payment extends Public_controller
+class Payment extends CI_Controller
 {
 
     public function __construct()
@@ -31,12 +31,6 @@ class Payment extends Public_controller
         $data['farms'] = $this->Payment_model->get_farms();
         $this->load->view('payments/payment_view', $data);
     }
-
-
-
-
-
-
 
 
     public function get_weeks_by_farm()
@@ -196,6 +190,14 @@ class Payment extends Public_controller
 
 
 
+
+
+    /**
+     * Filtra los registros de pagos por semana y finca seleccionadas,
+     * y los muestra en la vista payment_view.
+     *
+     * @return void
+     */
     public function filter_adjusments()
     {
         $week = $this->input->get('week');
@@ -245,6 +247,18 @@ class Payment extends Public_controller
         $this->load->view('Crud/default', (array) $output);
     }
 
+    /**
+     * Guarda los pagos enviados desde la vista
+     *
+     * Inicia una transacción para guardar todos los pagos,
+     * si ocurre cualquier error, hace rollback de la transacción
+     * y regista el error en el log.
+     *
+     * Si todos los pagos se guardan correctamente, redirige a
+     * show_pivoted_data pasando selected_week como parámetro GET.
+     *
+     * @return void
+     */
     public function save_adjusments()
     {
         $this->load->model('Payment_model');
@@ -295,6 +309,19 @@ class Payment extends Public_controller
         }
     }
 
+    /**
+     * Muestra la vista de edición de pagos
+     *
+     * Recibe dos parámetros GET:
+     * - farm: Identificador de la finca
+     * - week: Número de semana
+     *
+     * Carga el modelo Payment_model y utiliza su método get_records_by_week
+     * para obtener los datos de la vista vw_pm_temporaryworkers_reports,
+     * luego pasa los datos a la vista edit_view
+     *
+     * @return void
+     */
     public function edit_adjusments()
     {
 
@@ -313,6 +340,17 @@ class Payment extends Public_controller
         $this->load->view('payments/edit_view', $data);
     }
 
+    /**
+     * Actualiza los registros de pagos enviados desde la vista de edición
+     *
+     * Recibe los registros de pagos actualizados en el POST, y los
+     * actualiza en la base de datos mediante el método update_payment_record
+     * del modelo Payment_model. Luego redirige de vuelta a la vista de
+     * edición pasando los parámetros selected_farm y selected_week como
+     * parámetros GET.
+     *
+     * @return void
+     */
     public function update_adjusments()
     {
         // Obtener datos del POST
