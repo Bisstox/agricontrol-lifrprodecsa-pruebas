@@ -41,7 +41,7 @@ class Payment_model extends CI_Model
         $this->db->select('DISTINCT (weeknumber) AS payment_week')
             ->from('vw_pm_temporaryworkers')
             ->where("weeknumber NOT IN ($subquery)", NULL, FALSE)// Subconsulta para excluir semanas ya registradas
-            ->where("weeknumber > '202425'");
+            ->where("weeknumber > '1'");
 
         $query = $this->db->get();
         return $query->result_array(); // Retornar el resultado como un array

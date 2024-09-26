@@ -45,9 +45,7 @@ class Payment extends CI_Controller
         // Obtener las semanas disponibles
         $weeks = $this->Payment_model->get_available_weeks($farm_id);
 
-        if (empty($weeks)) {
-            echo 'nulo';
-        }
+
         // Retornar las semanas en formato JSON
         echo json_encode($weeks);
         exit;
