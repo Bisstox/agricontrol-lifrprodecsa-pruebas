@@ -54,6 +54,17 @@ class Payment extends CI_Controller
         // echo '</pre>';
     }
 
+    public function print_available_weeks($farm_id)
+    {
+        $this->load->model('Payment_model');
+
+        $available_weeks = $this->Payment_model->get_available_weeks($farm_id);
+
+        // Imprimir el contenido del array resultante
+        echo '<pre>';
+        print_r($available_weeks);
+        echo '</pre>';
+    }
 
     /**
      * Muestra la vista con los datos pivotados para la semana seleccionada,
